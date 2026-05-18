@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#E8E4C9"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/buttonBackDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/baseline_arrow_circle_left_24"/>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="16dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="#0890ec"
+            android:layout_marginTop="20dp"
+            android:layout_weight="6"
+            android:layout_marginLeft="50dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="100dp"
+            android:layout_width="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewTypeDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:text="Lost" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:id="@+id/imgViewDetail"/>
+
+    <TextView
+        android:id="@+id/textViewTitleDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="55dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Item : Airpods black with a sticker bunny" />
+
+    <TextView
+        android:id="@+id/textViewDescDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Description: I lost my yellow pouch of character on it" />
+
+    <TextView
+        android:id="@+id/textViewTimeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Time : 20/04/2026" />
+
+    <TextView
+        android:id="@+id/textViewLocDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Location : at Burwood Campus" />
+
+</LinearLayout>

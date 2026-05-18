@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    android:padding="25dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardUseCompatPadding="true"
+    android:layout_height="80dp"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="16dp"
+            app:cardElevation="5dp"
+            android:backgroundTint="#0890ec"
+            app:cardUseCompatPadding="true"
+            android:layout_gravity="center_vertical"
+            android:layout_height="50dp"
+            android:layout_width="110dp">
+
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:text="Lost" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#7D0552"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="Airpods black with a sticker..." />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#872657"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="12/2/2026" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/buttonDelete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="2dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Delete"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/outline_delete_forever_24" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

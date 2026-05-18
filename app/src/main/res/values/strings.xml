@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Task7P_S225138694</string>
+
+    <!-- Google Maps API Key (Keep this empty in version control) -->
+    <!-- Override in build.gradle or local.properties -->
+    <string name="google_maps_key">YOUR_API_KEY</string>
+</resources>

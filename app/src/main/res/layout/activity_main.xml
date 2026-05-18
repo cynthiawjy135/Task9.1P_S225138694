@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E8E4C9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lost and Found"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="#0890ec"
+        android:layout_marginTop="65dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#DA1884"
+        android:id="@+id/btnAddAdvert"
+        android:text="CREATE A NEW ADVERT"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnShowList"
+        android:backgroundTint="#FE632A"
+        android:text="SHOW ALL LOST AND FOUND"></Button>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnShowOnMap"
+        android:backgroundTint="#91b417"
+        android:text="SHOW ON MAP"></Button>
+
+</LinearLayout>
